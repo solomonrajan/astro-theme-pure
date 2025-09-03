@@ -92,3 +92,38 @@ a {
   }
 }
 
+.material-icons {
+  font-size: 36px;   /* bigger */
+  color: green;      /* change color */
+  vertical-align: middle;
+}
+
+.material-icons.small {
+  font-size: 18px;   /* smaller */
+  color: green;      /* change color */
+  vertical-align: middle;
+}
+.material-icons.medium {
+  font-size: 24px;   /* medium */
+  color: green;      /* change color */
+  vertical-align: middle;
+}
+.material-icons.large {
+  font-size: 36px;   /* large */
+  color: green;      /* change color */
+  vertical-align: middle;
+}
+.material-icons.xlarge {
+  font-size: 48px;   /* extra large */
+  color: green;      /* change color */
+  vertical-align: middle;
+}
+/* Utility Classes */
+.size-2 {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+.size-3 {
+  width: 0.75rem;
+  height: 0.75rem;
+}

@@ -73,3 +73,22 @@ a {
     color: hsl(var(--primary) / var(--un-text-opacity, 1));
   }
 }
+
+.status-dot {
+  width: 10px;               /* Size of the dot */
+  height: 10px;
+  background-color: #09c309; /* Green */
+  border-radius: 150%;        /* Makes it round */
+  display: inline-block;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+}
+

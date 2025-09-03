@@ -34,7 +34,7 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
       <div class='flex flex-col items-center gap-y-4'>
         <h1 class='text-3xl font-bold'>{config.author}</h1>
         <div class='flex flex-wrap justify-center gap-x-7 gap-y-3'>
-          <Label title='China'>
+          <Label title='Kerala'>
             <Icon name='location' class='size-5' slot='icon' />
           </Label>
           <Label
@@ -55,6 +55,8 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
         class='flex flex-row items-center gap-x-3 rounded-full border bg-background px-4 py-2 text-sm shadow-sm transition-shadow hover:shadow-md'
       >
         <!--<div class='status-dot'></div>-->
+        <span class='status-dot' aria-hidden='true'></span>
+        <span class="blink-dot"></span>
         <span class='material-symbols-outlined'>enterprise</span>
         <p class='font-medium text-muted-foreground'>Open To Work</p>
       </a>

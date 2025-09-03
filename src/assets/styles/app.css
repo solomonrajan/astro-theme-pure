@@ -93,7 +93,7 @@ a {
 }
 
 .material-icons {
-  font-size: 36px;   /* bigger */
+  font-size: 20px;   /* bigger */
   color: green;      /* change color */
   vertical-align: middle;
 }
@@ -126,4 +126,16 @@ a {
 .size-3 {
   width: 0.75rem;
   height: 0.75rem;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 0,   /* 0 = outline, 1 = filled */
+    'wght' 400, /* weight */
+    'GRAD' 0,   /* grade */
+    'opsz' 24;  /* optical size */
+  font-size: 25px;
+  color: rgb(48, 48, 48);
+  vertical-align: middle;
+  /*animation: blink 1s infinite;*/
 }

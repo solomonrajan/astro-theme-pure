@@ -56,7 +56,7 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
       >
         <!--<div class='status-dot'></div>-->
         <span class='status-dot' aria-hidden='true'></span>
-        <span class="blink-dot"></span>
+        <span class='blink-dot'></span>
         <span class='material-symbols-outlined'>enterprise</span>
         <p class='font-medium text-muted-foreground'>Open To Work</p>
       </a>
@@ -66,9 +66,12 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
       <Section title='About'>
         <p class='text-muted-foreground'><b>Welfare Officer / Registred Social Worker</b></p>
         <p class='text-muted-foreground'>
-            <span style="text-align: justify; display: block;">
-              I am a Welfare Officer with five years of professional experience and a Registered Social Worker with a total of six years in the field. Currently, I am responsible for overseeing 1,500 employees across seven estates and three factories. Hailing from Kerala, I also possess valuable work experience in Tamil Nadu.
-            </span>
+          <span style='text-align: justify; display: block;'>
+            I am a Welfare Officer with five years of professional experience and a Registered
+            Social Worker with a total of six years in the field. Currently, I am responsible for
+            overseeing 1,500 employees across seven estates and three factories. Hailing from
+            Kerala, I also possess valuable work experience in Tamil Nadu.
+          </span>
         </p>
         <Button title='More about me' class='w-fit self-end' href='/about' variant='ahead' />
       </Section>
@@ -88,33 +91,37 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
       }
 
       {
-        <Section title='Experience'>
-      <Card
-        heading='Lorem Ipsum'
-        subheading='Sit amet consectetur'
-        date='Dec 2022 - Nov 2023'
-        imagePath='/src/assets/about-astro.png'
-        altText='Lorem, ipsum dolor sit'
-        imageClass='h-12 w-auto md:-start-16'
-      >
-        <ul class='ms-4 list-disc text-muted-foreground'>
-          <li>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore debitis recusandae, ut
-            molestiae laboriosam pariatur!
-
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, pariatur!</li>
-          </li>
-        </ul>
-      </Card>
-      <Card
-        heading='Lorem Ipsum'
-        subheading='Sit amet consectetur'
-        date='Dec 2022 - Nov 2023'
-        imagePath='/src/assets/about-astro.png'
-        altText='Lorem, ipsum dolor sit'
-        imageClass='h-12 w-auto md:-start-16'
-      />
-    </Section>
+        (
+          <Section title='Experience'>
+            <Card
+              heading='Welfare Officer'
+              subheading='Poabs Enterprises Private Limited'
+              date='June 2023 - Till Now'
+              imagePath='/src/assets/about-astro.png'
+              altText='Lorem, ipsum dolor sit'
+              imageClass='h-12 w-auto md:-start-16'
+            >
+              <ul class='ms-4 list-disc text-muted-foreground'>
+                <li>
+                    <span style="text-align: justify; display: block;">
+                      Responsible for overseeing 1,500 employees across seven estates and three factories, I assist HR personnel with payroll management and ERP validation to ensure smooth and efficient operations. My role requires meticulous attention to detail and effective coordination, ensuring that all processes are handled accurately and efficiently for the benefit of both employees and the organization.
+                    </span>
+                  <li>
+                    Still going on...
+                  </li>
+                </li>
+              </ul>
+            </Card>
+            <Card
+              heading='Lorem Ipsum'
+              subheading='Sit amet consectetur'
+              date='Dec 2022 - Nov 2023'
+              imagePath='/src/assets/about-astro.png'
+              altText='Lorem, ipsum dolor sit'
+              imageClass='h-12 w-auto md:-start-16'
+            />
+          </Section>
+        )
       }
       <Section title='Education'>
         <Card
